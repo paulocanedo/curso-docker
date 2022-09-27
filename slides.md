@@ -108,6 +108,7 @@ Jetbrains IDEs VSCode
 - docker pause
 - docker unpause
 - docker port
+- docker exec
 - docker kill
 - docker start
 - docker stop
@@ -144,9 +145,9 @@ Jetbrains IDEs VSCode
   - RUN
   - CMD
   - LABEL
-  <!-- - EXPOSE -->
+  - EXPOSE
   <!-- - ENV -->
-  <!-- - ADD -->
+  - ADD
   - COPY
   <!-- - ENTRYPOINT -->
   <!-- - VOLUME -->
