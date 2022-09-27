@@ -78,9 +78,15 @@ Jetbrains IDEs VSCode
 
 # Primeiros passos
 
-  - ```docker run [OPTIONS] IMAGE [COMMAND] [ARG...]```
-  - ```docker run hello-world```
-  - ```docker ps```
+- docker run [--it]
+- docker pause
+- docker unpause
+- docker port
+- docker kill
+- docker start
+- docker stop
+- docker top
+- docker inspect
 
 ---
 
@@ -92,8 +98,57 @@ Jetbrains IDEs VSCode
 
 ---
 
+# Sistema de Arquivos do container
+
+![](./images/container-layers.jpg)
+
+---
+
+# Múltiplos containers com mesma imagem
+
+![](./images/sharing-layers.jpg)
+
+---
+
+# Construindo sua imagem
+
+- Dockerfile
+  - \# syntax=builder
+  - FROM
+  - RUN
+  - CMD
+  - LABEL
+  <!-- - EXPOSE -->
+  <!-- - ENV -->
+  <!-- - ADD -->
+  - COPY
+  <!-- - ENTRYPOINT -->
+  <!-- - VOLUME -->
+  <!-- - USER -->
+  - WORKDIR
+  <!-- - ARG -->
+
+---
+
+# Construção com estágios múltiplos
+
+---
+
+# Volumes
+
+![](./images/types-of-mounts-volume.png)
+
+---
+
+# Network
+
+---
+
 # Referências bibliográficas
 
 - https://docs.docker.com/get-started/
 - https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504
 - https://kubernetes.io/docs/concepts/overview/
+https://docs.docker.com/storage/storagedriver/
+https://docs.docker.com/storage/volumes/
+https://docs.docker.com/build/building/multi-stage/
