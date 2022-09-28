@@ -118,19 +118,27 @@ Jetbrains IDEs VSCode
   - RUN
   - CMD
   - LABEL
-  <!-- - EXPOSE -->
-  <!-- - ENV -->
-  <!-- - ADD -->
+  - EXPOSE
+  - ENV
+  
+---
+
+# Construindo sua imagem
+
+- Dockerfile
+  - ADD
   - COPY
-  <!-- - ENTRYPOINT -->
-  <!-- - VOLUME -->
-  <!-- - USER -->
+  - ENTRYPOINT
+  - VOLUME
+  - USER
   - WORKDIR
-  <!-- - ARG -->
+  - ARG
 
 ---
 
 # Construção com estágios múltiplos
+
+Permite construir imagens com estágios intermediários para remover os passos desnecessários e obter uma imagem final mais otimizada.
 
 ---
 
@@ -140,7 +148,22 @@ Jetbrains IDEs VSCode
 
 ---
 
+# Tipos de Volumes
+
+- volume
+- bind
+- tmpfs
+
+---
+
 # Network
+## tipos de rede
+- bridge
+- host
+- none
+
+## dns
+Docker possui um dns interno
 
 ---
 
