@@ -42,6 +42,11 @@ Se você é familiar com _chroot_, pense em um container como uma versão estend
 
 ---
 
+# Mapa do kernel linux
+![width:600px](./images/800px-Linux_kernel_map.png)
+
+---
+
 # Vamos falar mais sobre isolamento
 ## kernel namespaces
 
@@ -66,6 +71,27 @@ Se você é familiar com _chroot_, pense em um container como uma versão estend
 
 ---
 
+# Vantagens
+
+- custos
+- portabilidade
+- fácil manutenibilidade
+- altamente escalável
+- distribuição melhor de recursos
+
+---
+
+# Desvantagens
+
+- executa em apenas um sistema operacional
+- um pouco mais lento do que bare-metal
+- difícil ser aplicado em sistemas monolíticos
+- isolamento menor do que VM
+- persistência de dados é mais complicada
+- interface gráfica não funciona bem (ainda, talvez?)
+
+---
+
 # Instalação
 
 - Linux
@@ -82,6 +108,7 @@ Jetbrains IDEs VSCode
 - docker pause
 - docker unpause
 - docker port
+- docker exec
 - docker kill
 - docker start
 - docker stop
