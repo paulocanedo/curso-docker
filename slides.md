@@ -64,7 +64,7 @@ Se você é familiar com _chroot_, pense em um container como uma versão estend
 
 - Docker Engine
   - API
-  - CLI
+- Docker CLI
 - Docker Compose
 - Docker Swarm
 - Docker HUB

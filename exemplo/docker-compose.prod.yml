@@ -1,0 +1,23 @@
+# php -> mysql -> redis -> nginx
+
+version: "3.8"
+
+services:
+  aplicacao:
+    build:
+      context: .
+    ports:
+      - "80:80"
+    volumes:
+      - sessao:/tmp
+
+  banco_dados:
+    image: mysql:8.0
+    volumes:
+      - "dbdata:/var/lib/mysql"        
+    restart: always
+
+volumes:
+  sessao:
+  dbdata:
+

@@ -1,0 +1,30 @@
+# php -> mysql -> redis -> nginx
+# arquivo docker-compose.dev.yml
+#
+version: "3.8"
+
+services:
+  aplicacao:
+    ports:
+      - "8088:80"
+    volumes:
+      - sessao:/tmp
+      - ./src:/var/www/html
+      - ./vendor:/var/www/vendor
+      - ./node_modules:/var/www/node_modules
+
+  banco_dados:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    volumes:
+      - "dbdata:/var/lib/mysql"        
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+

@@ -1,0 +1,12 @@
+{
+  "name": "exemplo-completo",
+  "version": "1.0.0",
+  "description": "Exemplo Completo Curso Docker",
+  "main": "index.js",
+  "author": "Curso docker",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
+}
